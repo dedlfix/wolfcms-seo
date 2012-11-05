@@ -45,7 +45,7 @@ if (!defined('IN_CMS')) { exit(); }
     <?php endforeach; ?>
 </ul>
 
-<h2>Titles</h2>
+<h2><?php echo __('Page titles'); ?></h2>
 
 <h3><?php echo __('Missing titles'); ?></h3>
 
