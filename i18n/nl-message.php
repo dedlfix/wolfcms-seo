@@ -1,18 +1,18 @@
 <?php
-
 if (!defined('IN_CMS')) { exit(); }
 
 /**
-* Media Gallery
-* 
-* Plugin for displaying images and video albums
-* 
-* @author Nic Wortel <nd.wortel@gmail.com>
-* 
-* @file        /i18n/nl-message.php
-* @date        12/08/2011
-* 
-*/
+ * SEO
+ * 
+ * Plugin for Search Engine Optimalization in Wolf CMS
+ * 
+ * @package     Plugins
+ * @subpackage  SEO
+ * 
+ * @author      Nic Wortel <nd.wortel@gmail.com>
+ * @copyright   Nic Wortel, 2012
+ * @version     0.2.1
+ */
 
 return array(
     'Duplicate meta descriptions' => 'Dubbele meta beschrijvingen',

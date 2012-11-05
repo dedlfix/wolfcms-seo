@@ -8,3 +8,4 @@ Features
 
 * robots.txt
 * sitemap.xml
+* suggestions to improve page titles and descriptions
