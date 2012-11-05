@@ -11,35 +11,42 @@ if (!defined('IN_CMS')) { exit(); }
  * 
  * @author      Nic Wortel <nd.wortel@gmail.com>
  * @copyright   Nic Wortel, 2012
- * @version     0.1.0
+ * @version     0.2.0
  */
 
 ?>
 <h1><?php echo __('Settings'); ?></h1>
-<br /><br />
-<div id="media_gallery">
 
-	<?php echo (isset($errorDesc)) ? $errorDesc : ''; ?>
-
-	<form method="post" action="<?php echo get_url('plugin/media_gallery/settings'); ?>">
-		<table cellspacing="5" cellpadding="5" border="0">
-            <tr>
-                <td><strong><?php echo __('Parent page'); ?></strong></td>
-                <td>
-                    <select name="setting[parent_id]">
-                    <?php foreach ($parents as $parent): ?>
-                        <option value="<?php echo $parent->id; ?>"<?php if ($settings['parent_id'] == $parent->id) echo ' selected="selected"'; ?>><?php echo $parent->title; ?></option>
-                    <?php endforeach; ?>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-				<td colspan="2">
-					<br />
-					<input type="submit" name="save" value="<?php echo __('Save Settings'); ?>" />
-				</td>
-			</tr>
-		</table>
-	</form>
-    
-</div>
+<form method="post" action="<?php echo get_url('plugin/seo/settings'); ?>">
+<table cellspacing="5" cellpadding="5" border="0">
+    <tr>
+        <td><strong><label for="min_title"><?php echo __('Minimum title length'); ?></label></strong></td>
+        <td>
+            <input type="text" id="min_title" name="setting[min_title_length]" value="<?php echo $settings['min_title_length']; ?>" />
+        </td>
+    </tr>
+    <tr>
+        <td><strong><label for="max_title"><?php echo __('Maximum title length'); ?></label></strong></td>
+        <td>
+            <input type="text" id="max_title" name="setting[max_title_length]" value="<?php echo $settings['max_title_length']; ?>" />
+        </td>
+    </tr>
+    <tr>
+        <td><strong><label for="min_descr"><?php echo __('Minimum description length'); ?></label></strong></td>
+        <td>
+            <input type="text" id="min_descr" name="setting[min_descr_length]" value="<?php echo $settings['min_descr_length']; ?>" />
+        </td>
+    </tr>
+    <tr>
+        <td><strong><label for="max_descr"><?php echo __('Maximum description length'); ?></label></strong></td>
+        <td>
+            <input type="text" id="max_descr" name="setting[max_descr_length]" value="<?php echo $settings['max_descr_length']; ?>" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" name="save" value="<?php echo __('Save Settings'); ?>" />
+        </td>
+    </tr>
+</table>
+</form>

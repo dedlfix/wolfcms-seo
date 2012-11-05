@@ -11,5 +11,12 @@ if (!defined('IN_CMS')) { exit(); }
  * 
  * @author      Nic Wortel <nd.wortel@gmail.com>
  * @copyright   Nic Wortel, 2012
- * @version     0.1.0
+ * @version     0.2.0
  */
+
+Plugin::setAllSettings(array(
+    'min_title_length' => 4,
+    'max_title_length' => 80,
+    'min_descr_length' => 20,
+    'max_descr_length' => 170
+), 'seo');

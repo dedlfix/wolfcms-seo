@@ -11,7 +11,7 @@ if (!defined('IN_CMS')) { exit(); }
  * 
  * @author      Nic Wortel <nd.wortel@gmail.com>
  * @copyright   Nic Wortel, 2012
- * @version     0.1.0
+ * @version     0.2.0
  */
 
 class SeoController extends PluginController {
@@ -21,10 +21,15 @@ class SeoController extends PluginController {
         if (defined('CMS_BACKEND')) {
             define('VIEWS', self::PLUGIN_NAME . '/views');
             $this->setLayout('backend');
+            $this->assignToLayout('sidebar', new View('../../plugins/seo/views/sidebar'));
         }
         else {
             define('VIEWS', '../../plugins/' . self::PLUGIN_NAME . '/views');
         }
+    }
+    
+    public function index() {
+        $this->suggestions();
     }
     
     /**
@@ -36,6 +41,17 @@ class SeoController extends PluginController {
         ));
     }
     
+    public function settings() {
+        if (isset($_POST['save']) && $_POST['save'] == __('Save Settings')) {
+            Plugin::setAllSettings($_POST['setting'], self::PLUGIN_NAME);
+            Flash::setNow('success', __('Settings have been saved!'));
+        }
+        
+        $this->display('seo/views/settings', array(
+            'settings' => Plugin::getAllSettings(self::PLUGIN_NAME)
+        ));
+    }
+    
     /**
     * Displays a sitemap.xml file
     * 
@@ -43,6 +59,14 @@ class SeoController extends PluginController {
     public function sitemapXml() {
         echo new View('../../plugins/seo/views/sitemap_xml', array(
             //'pages' => Page::findAll(array('where' => 'page.needs_login <> 1'))
+        ));
+    }
+    
+    public function suggestions() {
+        $suggestions = Suggestion::findAll();
+        
+        $this->display('seo/views/suggestions', array(
+            'suggestions' => $suggestions
         ));
     }
 }
