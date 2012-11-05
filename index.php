@@ -24,7 +24,7 @@ Plugin::setInfos(array(
     'description'           =>    __('Plugin for Search Engine Optimization in Wolf CMS.'),
     'type'                  =>    'both',
     'author'                =>    'Nic Wortel',
-    'version'               =>    '0.2.0',
+    'version'               =>    '0.2.1',
     'website'               =>    'http://www.wolfcms.org/',
     'require_wolf_version'  =>    '0.7.4'
 ));
