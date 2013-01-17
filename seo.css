@@ -1,0 +1,19 @@
+/**
+ * SEO
+ * 
+ * Plugin for Search Engine Optimalization in Wolf CMS
+ * 
+ * @package     Plugins
+ * @subpackage  SEO
+ * 
+ * @author      Nic Wortel <nic.wortel@nth-root.nl>
+ * @copyright   Nic Wortel, 2012
+ * @version     0.2.1
+ */
+
+#body_plugin_seo table {width: 100%}
+#body_plugin_seo table td {padding: 2px;}
+#body_plugin_seo table td.actions {width: 20%; text-align: center}
+#body_plugin_seo table tr:hover {background-color: #CCC;}
+#body_plugin_seo table tr:nth-child(odd) {background-color: #EEE;}
+#body_plugin_seo table tr:nth-child(odd):hover {background-color: #CCC;}
