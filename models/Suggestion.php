@@ -27,9 +27,11 @@ class Suggestion extends Record {
         $suggestions['description']['missing'] = Page::find(array(
             'where' => 'description = "" OR description IS NULL'
         ));
-        $suggestions['description']['duplicate'] = Page::find(array(
-            'where' => 'description = "" OR description IS NULL'
-        ));
+        $suggestions['description']['duplicate'] = Record::query('
+            SELECT id, slug, breadcrumb, title, page.description FROM page
+            INNER JOIN (SELECT description FROM page
+            GROUP BY description HAVING count(id) > 1) dup ON page.description = dup.description ORDER BY description')
+                ->fetchAll(PDO::FETCH_CLASS);
         $suggestions['description']['long'] = Page::find(array(
             'where' => 'LENGTH(description) > ' . (int) $settings['max_descr_length']
         ));
@@ -40,9 +42,11 @@ class Suggestion extends Record {
         $suggestions['title']['missing'] = Page::find(array(
             'where' => 'title = "" OR title IS NULL'
         ));
-        $suggestions['title']['duplicate'] = Page::find(array(
-            'where' => 'description = "" OR description IS NULL'
-        ));
+        $suggestions['title']['duplicate'] = Record::query('
+            SELECT id, slug, breadcrumb, description, page.title FROM page
+            INNER JOIN (SELECT title FROM page
+            GROUP BY title HAVING count(id) > 1) dup ON page.title = dup.title ORDER BY title')
+                ->fetchAll(PDO::FETCH_CLASS);
         $suggestions['title']['long'] = Page::find(array(
             'where' => 'LENGTH(title) > ' . (int) $settings['max_title_length']
         ));

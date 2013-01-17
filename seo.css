@@ -11,9 +11,14 @@
  * @version     0.2.1
  */
 
+#body_plugin_seo .groupheader {font-weight: bold; background-color: #AAA; padding: 2px 6px;}
+#body_plugin_seo h3 i {color: red; }
+#body_plugin_seo h3 em {color: green; font-size: 1.5em;}
 #body_plugin_seo table {width: 100%}
+#body_plugin_seo table.group td {padding-left: 32px;}
 #body_plugin_seo table td {padding: 2px;}
 #body_plugin_seo table td.actions {width: 20%; text-align: center}
+#body_plugin_seo table td div small {color: #666;}
 #body_plugin_seo table tr:hover {background-color: #CCC;}
 #body_plugin_seo table tr:nth-child(odd) {background-color: #EEE;}
 #body_plugin_seo table tr:nth-child(odd):hover {background-color: #CCC;}
