@@ -34,5 +34,5 @@ return array(
     'Short meta descriptions' => 'Korte meta beschrijvingen',
     'Short titles' => 'Korte titels',
     'Suggestions' => 'Suggesties',
-    'see frontend' => '',    
+    'see frontend' => 'bekijk de frontend',    
 );
