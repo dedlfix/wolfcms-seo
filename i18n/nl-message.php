@@ -33,5 +33,6 @@ return array(
     'Settings' => 'Instellingen',
     'Short meta descriptions' => 'Korte meta beschrijvingen',
     'Short titles' => 'Korte titels',
-    'Suggestions' => 'Suggesties'
+    'Suggestions' => 'Suggesties',
+    'see frontend' => '',    
 );

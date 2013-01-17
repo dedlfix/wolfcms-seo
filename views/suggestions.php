@@ -28,7 +28,7 @@ if (!defined('IN_CMS')) {
                 <a href="<?php echo get_url('page/edit', $suggestion->id); ?>"><?php echo $suggestion->title; ?></a>
             </td>
             <td class="actions"> 
-                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('visit'); ?>]</a>
+                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('see frontend'); ?>]</a>
             </td>
         </tr>
     <?php endforeach; ?>
@@ -60,7 +60,7 @@ if (!defined('IN_CMS')) {
                 </div>
             </td>
             <td class="actions">
-                <a href="<?php echo URL_PUBLIC . $page->getUri(); ?>" target="_blank">[<?php echo __('visit'); ?>]</a>
+                <a href="<?php echo URL_PUBLIC . $page->getUri(); ?>" target="_blank">[<?php echo __('see frontend'); ?>]</a>
             </td>
         </tr>
         <?php
@@ -77,7 +77,7 @@ if (!defined('IN_CMS')) {
                 <a href="<?php echo get_url('page/edit', $suggestion->id); ?>"><?php echo $suggestion->title; ?></a>
             </td>
             <td class="actions">
-                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('visit'); ?>]</a>
+                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('see frontend'); ?>]</a>
             </td>
         </tr>
     <?php endforeach; ?>
@@ -92,7 +92,7 @@ if (!defined('IN_CMS')) {
                 <a href="<?php echo get_url('page/edit', $suggestion->id); ?>"><?php echo $suggestion->title; ?></a>
             </td>
             <td class="actions">
-                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('visit'); ?>]</a>
+                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('see frontend'); ?>]</a>
             </td>
         </tr>
     <?php endforeach; ?>
@@ -108,7 +108,7 @@ if (!defined('IN_CMS')) {
                 <a href="<?php echo get_url('page/edit', $suggestion->id); ?>"><?php echo $suggestion->title; ?></a>
             </td>
             <td class="actions">
-                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('visit'); ?>]</a>
+                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('see frontend'); ?>]</a>
             </td>
         </tr>
     <?php endforeach; ?>
@@ -140,7 +140,7 @@ if (!defined('IN_CMS')) {
                 </div>
             </td>
             <td class="actions">
-                <a href="<?php echo URL_PUBLIC . $page->getUri(); ?>" target="_blank">[<?php echo __('visit'); ?>]</a>
+                <a href="<?php echo URL_PUBLIC . $page->getUri(); ?>" target="_blank">[<?php echo __('see frontend'); ?>]</a>
             </td>
         </tr>
         <?php
@@ -159,7 +159,7 @@ if (!defined('IN_CMS')) {
                 <a href="<?php echo get_url('page/edit', $suggestion->id); ?>"><?php echo $suggestion->title; ?></a>
             </td>
             <td class="actions">
-                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('visit'); ?>]</a>
+                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('see frontend'); ?>]</a>
             </td>
         </tr>
 <?php endforeach; ?>
@@ -174,7 +174,7 @@ if (!defined('IN_CMS')) {
                 <a href="<?php echo get_url('page/edit', $suggestion->id); ?>"><?php echo $suggestion->title; ?></a>
             </td>
             <td class="actions">
-                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('visit'); ?>]</a>
+                <a href="<?php echo URL_PUBLIC . $suggestion->getUri(); ?>" target="_blank">[<?php echo __('see frontend'); ?>]</a>
             </td>
         </tr>
 <?php endforeach; ?>
