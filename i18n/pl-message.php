@@ -25,7 +25,7 @@
 	'Plugin for Search Engine Optimalization in Wolf CMS.' => 'Plugin optymalizacji dla wyszukiwarek',
 	'Plugin for Search Engine Optimization in Wolf CMS.' => 'Plugin optymalizacji dla wyszukiwarek',
 	'Save Settings' => 'Zapisz Ustawienia',
-	'Search Engine Optimization' => '',
+	'Search Engine Optimization' => 'SEO - optymalizacja dla wyszukiwarek',
 	'Settings' => 'Ustawienia',
 	'Settings have been saved!' => 'Ustawienia zostały zapisane!',
 	'Short meta descriptions' => 'Krótkie opisy meta',
