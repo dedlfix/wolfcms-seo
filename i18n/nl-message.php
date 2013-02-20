@@ -27,7 +27,7 @@ return array(
     'Missing meta descriptions' => 'Missende meta beschrijvingen',
     'Missing titles' => 'Missende titels',
     'Page titles' => 'Paginatitels',
-    'Plugin for Search Engine Optimalization in Wolf CMS.' => 'Plugin voor zoekmachineoptimalisatie in Wolf CMS.',
+    'Plugin for Search Engine Optimization in Wolf CMS.' => 'Plugin voor zoekmachineoptimalisatie in Wolf CMS.',
     'Search Engine Optimization' => 'Zoekmachineoptimalisatie',
     'SEO plugin' => 'SEO plugin',
     'Settings' => 'Instellingen',
