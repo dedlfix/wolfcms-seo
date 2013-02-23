@@ -29,5 +29,5 @@ if (!defined('IN_CMS')) { exit(); }
 </p>
 <div class="box">
     <h2><?php echo __('SEO plugin'); ?></h2>
-    <p><?php echo __('Plugin for Search Engine Optimalization in Wolf CMS.'); ?></p>
+    <p><?php echo __('Plugin for Search Engine Optimization in Wolf CMS.'); ?></p>
 </div>
